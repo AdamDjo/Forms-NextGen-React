@@ -8,6 +8,7 @@ import { cn } from "$/utils/cn";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { CheckIcon, XIcon } from "lucide-react";
 import { NextPage } from "next";
+import Link from "next/link";
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import { z } from "zod";
@@ -65,7 +66,13 @@ const PasswordValidation: NextPage = () => {
   }
 
   return (
-    <div className="mx-auto flex h-screen max-w-sm flex-col items-center justify-center gap-2 bg-background">
+    <div className=" container  flex h-screen max-w-sm flex-col  justify-center">
+      <div className="text-center">
+        <Button asChild>
+          <Link href="/">back</Link>
+        </Button>
+      </div>
+      <hr className=" my-5"></hr>
       <Form onSubmit={form.handleSubmit(handleSubmit)}>
         <Controller
           render={({ field }) => {

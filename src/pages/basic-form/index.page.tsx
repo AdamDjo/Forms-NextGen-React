@@ -10,6 +10,7 @@ import { FieldError } from "$/components/ui/field-error";
 
 import { Code } from "$/components/ui/code";
 import { toast } from "$/components/ui/use-toast";
+import Link from "next/link";
 
 const formSchema = z.object({
   username: z.string().trim().min(3, "too short").max(20, "too large"),
@@ -35,7 +36,14 @@ const BasicForm = () => {
   const { register } = form;
 
   return (
-    <div className="mx-auto flex h-screen max-w-sm flex-col items-center justify-center gap-2 bg-background">
+    <div className=" container  flex h-screen max-w-sm flex-col  justify-center">
+      <div className="text-center">
+        <Button asChild>
+          <Link href="/">back</Link>
+        </Button>
+      </div>
+      <hr className=" my-5"></hr>
+
       <Form
         onSubmit={form.handleSubmit((data) => {
           toast({
