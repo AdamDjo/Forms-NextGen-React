@@ -10,7 +10,6 @@ import { FieldError } from "$/components/ui/field-error";
 
 import { Code } from "$/components/ui/code";
 import { toast } from "$/components/ui/use-toast";
-import { Toast } from "$/components/ui/toast";
 
 const formSchema = z.object({
   username: z.string().trim().min(3, "too short").max(20, "too large"),
