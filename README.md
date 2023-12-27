@@ -1,6 +1,6 @@
-# Create T3 App
+# Nextgen forms
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This project is a Next.js application implementing best practices for typed forms using TypeScript, Zod for typing, and react-hook-form. The application includes three types of forms: a basic form, a password validation form, and a multi-step form.
 
 ## Installation & Running the application
 
