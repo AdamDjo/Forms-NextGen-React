@@ -1,5 +1,11 @@
 import React from "react";
-import { MultiStepFormSchema, StepTwoSchema, stepTwoSchema } from "../lib";
+
+import {
+  StepTwoSchema,
+  Steps,
+  MultiStepFormSchema,
+  stepTwoSchema,
+} from "../lib";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form } from "$/components/ui/form";
@@ -7,7 +13,6 @@ import { Label } from "$/components/ui/label";
 import { Input } from "$/components/ui/input";
 import { FieldError } from "$/components/ui/field-error";
 import { Button } from "$/components/ui/button";
-import { Steps } from "../lib";
 
 type Props = {
   formValues: MultiStepFormSchema;

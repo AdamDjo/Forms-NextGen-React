@@ -1,9 +1,10 @@
 import React from "react";
+
 import {
-  MultiStepFormSchema,
   StepOneSchema,
-  stepOneSchema,
   Steps,
+  MultiStepFormSchema,
+  stepOneSchema,
 } from "../lib";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";

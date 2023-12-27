@@ -8,6 +8,7 @@ export const stepOneSchema = z.object({
   lastName: z.string().trim().min(2),
 });
 export type StepOneSchema = z.infer<typeof stepOneSchema>;
+
 //step two type
 export const stepTwoSchema = z.object({
   email: z.string().email(),
